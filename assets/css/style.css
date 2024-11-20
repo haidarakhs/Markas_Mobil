@@ -186,6 +186,9 @@ body {
 \*-----------------------------------*/
 
 .container { padding-inline: 15px; }
+.container-terlaris{
+  margin-top: 10rem;
+}
 
 .section { padding-block: var(--section-padding); }
 
@@ -785,7 +788,7 @@ body {
 .footer-list-text.bold {
   color: var(--black);
   font-weight: var(--fw-800);
-  margin-block: 15px 2px;
+  margin-block: 10px 2px;
 }
 
 .footer-link {
