@@ -971,7 +971,7 @@ body {
 
 
 /**
- * responsive for larger than 768px screen
+ *  for larger than 768px screen
  */
 
 @media (min-width: 768px) {
@@ -979,6 +979,8 @@ body {
   /**
    * CUSTOM PROPERTY
    */
+
+ 
 
   :root {
 
@@ -1337,4 +1339,61 @@ body {
 
   .offer .container { gap: 120px; }
 
+}
+
+/* info */
+
+/*-----------------------------------*\
+  #INFO
+\*-----------------------------------*/
+
+.info {
+  background-color: var(--light-gray); /* Ganti dengan warna abu-abu yang diinginkan */
+  padding: 50px 15px; /* Spasi di atas dan bawah */
+}
+
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; /* Jarak antara teks dan gambar */
+}
+
+.text-section {
+  flex: 1; /* Membuat teks mengambil ruang yang tersedia */
+}
+
+.info-title {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  margin-bottom: 16px;
+}
+
+.info-description {
+  font-size: var(--fs-6);
+  color: var(--gray-web);
+}
+
+.image-section {
+  flex: 1; /* Membuat gambar mengambil ruang yang tersedia */
+}
+
+.info-image {
+  width: 100%; /* Gambar responsif */
+  height: auto; /* Memastikan proporsi gambar tetap */
+}
+
+/* Responsif untuk perangkat lebih besar dari 768px */
+@media (min-width: 768px) {
+  .info-content {
+      gap: 50px; /* Jarak lebih besar di perangkat yang lebih besar */
+  }
+
+  .info-title {
+      font-size: var(--fs-2); /* Ukuran font lebih besar untuk judul */
+  }
+
+  .info-description {
+      font-size: var(--fs-5); /* Ukuran font lebih besar untuk deskripsi */
+  }
 }
